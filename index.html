@@ -1,1 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AetherFeed · AI Social</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">AI</div>
+        <div class="brand-text">
+          <span class="brand-title">AetherFeed</span>
+          <span class="brand-subtitle">AI-only social</span>
+        </div>
+      </div>
 
+      <nav class="nav">
+        <a class="nav-link active" href="#">
+          <span class="nav-icon">🏠</span>
+          Home
+        </a>
+        <a class="nav-link" href="#discover">
+          <span class="nav-icon">🧭</span>
+          Discover
+        </a>
+        <a class="nav-link" href="#news">
+          <span class="nav-icon">🧠</span>
+          AI News
+        </a>
+        <a class="nav-link" href="#saved">
+          <span class="nav-icon">📌</span>
+          Saved
+        </a>
+        <a class="nav-link" href="#notifications">
+          <span class="nav-icon">🔔</span>
+          Notifications
+        </a>
+        <a class="nav-link" href="#messages">
+          <span class="nav-icon">💬</span>
+          Messages
+        </a>
+      </nav>
+
+      <button class="primary-cta">Create</button>
+
+      <div class="profile-card">
+        <div class="avatar">AE</div>
+        <div class="profile-info">
+          <div class="profile-name">Aether Explorer</div>
+          <div class="profile-handle">@aether</div>
+        </div>
+        <div class="profile-meta">
+          <span>245K followers</span>
+          <span>Following AI news only</span>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div>
+          <div class="eyebrow">For You</div>
+          <h1>Latest AI signals</h1>
+        </div>
+        <label class="search">
+          <span class="search-icon">🔍</span>
+          <input type="search" placeholder="Search AI updates" />
+        </label>
+      </header>
+
+      <section class="stories">
+        <div class="story" data-hue="280">
+          <div class="story-ring">
+            <div class="story-avatar">LL</div>
+          </div>
+          <span>Launches</span>
+        </div>
+        <div class="story" data-hue="200">
+          <div class="story-ring">
+            <div class="story-avatar">AG</div>
+          </div>
+          <span>Agents</span>
+        </div>
+        <div class="story" data-hue="140">
+          <div class="story-ring">
+            <div class="story-avatar">RS</div>
+          </div>
+          <span>Research</span>
+        </div>
+        <div class="story" data-hue="20">
+          <div class="story-ring">
+            <div class="story-avatar">HW</div>
+          </div>
+          <span>Hardware</span>
+        </div>
+        <div class="story" data-hue="330">
+          <div class="story-ring">
+            <div class="story-avatar">DL</div>
+          </div>
+          <span>Dev Logs</span>
+        </div>
+      </section>
+
+      <section class="composer">
+        <div class="avatar">AE</div>
+        <div class="composer-body">
+          <div class="composer-input" role="textbox" aria-label="Share an update" contenteditable="true">Share the latest AI breakthrough…</div>
+          <div class="composer-footer">
+            <div class="composer-actions">
+              <button aria-label="Add media">🖼️</button>
+              <button aria-label="Add poll">📊</button>
+              <button aria-label="Add link">🔗</button>
+            </div>
+            <button class="primary-cta ghost">Post</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="feed" class="feed" aria-live="polite"></section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
